@@ -1,19 +1,9 @@
 print ("Hello world")
 
-aList = [1,7,3,6,5,6]
+nums = [1,2,3,4]
 
-lengthOfArray = len(aList)
-
-
-
-
-print("the solution")
+lengthOfArray = len(nums)
+largestNumber = max(nums)
 for i in range(0,lengthOfArray):
-    # print (aList[0:i] )
-    # print("sum is equal to: "+ str(sum(aList[0:i])))
-    # print (aList[i+1:lengthOfArray] )
-    # print("sum is equal to: " + str(sum(aList[i:lengthOfArray])))
-    if(sum(aList[0:i]) == sum(aList[i+1:lengthOfArray])):
-        print (i)
-    else:
-        print ("-1")
+    if((nums[i]!=largestNumber) & (nums[i]*2 >= largestNumber)):
+        print (nums.index(largestNumber))
